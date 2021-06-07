@@ -2,7 +2,7 @@
 
 A Simple Docker image setting up Node Express servers and a Redis instance for storage
 
-## Setup needed config in Docker Compose file
+## Setup required configuration in Docker Compose file
 
 #### 1. Port Mapping - Define the required ports for the application exposed
 
