@@ -4,7 +4,7 @@ FROM node:alpine
 # Add the path of the working directory
 WORKDIR /usr/app
 
-# Copy package JSON file to container target
+# Copy package JSON file to container target, Declare this before npm install so npm install doesnt run at every rebuild
 COPY ./package.json ./
 
 # Install some dependencies, Running this before next step will prevent unnecessary rebuilds
@@ -17,6 +17,6 @@ COPY ./ ./
 CMD ["npm","start"]
 
 #Build example
-#docker build -t jeevakalaiselvam:nodestarter
-#docker run -p 8080:8080 jeevakalaiselvam:nodestarter //To run in current process
-#docker run -d -p 8080:8080 jeevakalaiselvam:nodestarter //To run in background process
+#docker build -t jeevakalaiselvam/visits:latest .
+#docker run -p 8080:8080 jeevakalaiselvam/visits:latest //To run in current process
+#docker run -d -p 8080:8080 jeevakalaiselvam/visits:latest //To run in background process
