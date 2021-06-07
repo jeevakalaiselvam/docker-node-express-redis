@@ -4,6 +4,6 @@ A Simple Docker image setting up Node Express servers and a Redis instance for s
 
 ## Setup needed config in Docker Compose file
 
-### 1. Port Mapping - Define the required ports for the application exposed
+#### 1. Port Mapping - Define the required ports for the application exposed
 
-### 2. Restart Flags - Set the default restart behaviour when application exits
+#### 2. Restart Flags - Set the default restart behaviour when application exits
